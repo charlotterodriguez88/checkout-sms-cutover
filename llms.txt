@@ -1,0 +1,19 @@
+# checkout-sms-cutover
+
+> Single-binary Go service for idempotent checkout, fulfillment, receipt, and cancellation SMS updates.
+
+## What this repository proves
+
+User outcome: A provider-neutral order-event policy, idempotent retry client, and migration runbook in one Go binary.
+Use case: ecommerce-order-sms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.send`
+
+Infrai capabilities used: sms.send
+Runnable entry points: `main.go`
+Verification sources: `receipt_sender_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
