@@ -1,12 +1,12 @@
 # Transactional SMS for order updates in Go
 
-Run the business-rule tests first:
+Start by running the business-rule tests, they catch contract mistakes before you wire anything to a carrier:
 
 ```bash
 go test ./...
 ```
 
-The table supplies a confirmed checkout, a shipment with and without tracking, a USD receipt, and a cancellation. The expected result is exact customer-facing text for valid events and rejection of the shipment that lacks a tracking code. A second test observes the HTTP boundary, including a stable idempotency key across a rate-limit retry.
+The fixture gives a confirmed checkout, a shipment with and without tracking, a USD receipt, and a cancellation. Expected output is exact customer-facing text for the valid events and a hard reject on the shipment missing a tracking code. A second test checks the HTTP boundary and confirms the idempotency key stays stable across a rate-limit retry.
 
 ## Send an order update
 
