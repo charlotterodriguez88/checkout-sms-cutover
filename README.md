@@ -66,3 +66,7 @@ Quick start is above. For a real deployment you'll also need: The details below 
 **Checkout SMS Cutover: SMS (required for real sending)**
 - **Checkout SMS Cutover:** Many carriers/regions require a **pre-approved template and signature** before delivery. Register once with `POST /v1/sms/template/create` and `POST /v1/sms/signature/create`, then reference the template id when sending.
 - **Checkout SMS Cutover:** Sandbox/test numbers may work without it; production traffic will not.
+
+## Further reading
+
+- [Python SMS Notification Service Guide: Logistics Web App Batch Polling](docs/python-sms-notification-service-guide-logistics-w-w4sfit.md)
