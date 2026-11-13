@@ -69,4 +69,5 @@ Quick start is above. For a real deployment you'll also need: The details below 
 
 ## Further reading
 
+- [Transactional SMS Alerts — Compare US-Europe Providers Through Receipt Data Deletion](docs/transactional-sms-alerts-compare-us-europe-provid-1v2yj1.md)
 - [Python SMS Notification Service Guide: Logistics Web App Batch Polling](docs/python-sms-notification-service-guide-logistics-w-w4sfit.md)
